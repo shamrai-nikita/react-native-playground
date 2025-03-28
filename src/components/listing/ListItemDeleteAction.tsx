@@ -1,23 +1,22 @@
 import React from 'react';
-import {ImageSourcePropType, StyleSheet, View} from "react-native";
+import {ImageSourcePropType, StyleSheet, TouchableWithoutFeedback, View} from "react-native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import colors from "../../config/colors";
 
-/*
+
 interface ListItemDeleteActionProps {
     onPress?: () => void;
 }
-{onPress}: ListItemDeleteActionProps
-*/
 
-function ListItemDeleteAction() {
+
+function ListItemDeleteAction({onPress}: ListItemDeleteActionProps) {
     return (
-     //   <TouchableWithoutFeedback onPress={() => {}}>
+        <TouchableWithoutFeedback onPress={onPress}>
             <View style={styles.container}>
                 <MaterialCommunityIcons name={"delete"} size={30} color={colors.white} />
             </View>
-      //  </TouchableWithoutFeedback
+        </TouchableWithoutFeedback>
     );
 }
 

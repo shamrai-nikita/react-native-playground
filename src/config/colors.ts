@@ -5,7 +5,8 @@ const colors = {
     white: 'white',
     blue: 'blue',
     medium: '#6e6969',
-    light: 'lightslategrey',
+    light: '#d3d3d3',
+    ultralight: '#f5f5f5',
     danger: 'red',
 }
 
