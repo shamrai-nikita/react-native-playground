@@ -3,7 +3,7 @@ import {StyleSheet, Platform, SafeAreaView, View} from 'react-native';
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 
 interface IconProps {
-    name: React.ComponentProps<typeof MaterialCommunityIcons>['name']//keyof typeof MaterialCommunityIcons.glyphMap;
+    name: React.ComponentProps<typeof MaterialCommunityIcons>['name']
     size?: number;
     backgroundColor?: string;
     iconColor?: string;
