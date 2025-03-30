@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, View, FlatList, Text} from 'react-native';
 
-import {Icon, Screen} from "../utils";
-import {ListItem, ListItemSeparator} from "../listing";
+import {Icon, Screen} from "../../components/utils";
+import {ListItem, ListItemSeparator} from "../../components/listing";
 import colors from "../../config/colors";
 import {MaterialCommunityIcons} from "@expo/vector-icons";
 

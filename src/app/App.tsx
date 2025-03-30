@@ -1,30 +1,33 @@
 import {StatusBar} from 'expo-status-bar';
 import {StyleSheet, Switch, Text, View} from 'react-native';
 import AppButton from "../components/buttons";
-import MainScreen from "../components/mainScreen/MainScreen";
+import WelcomeScreen from "../screens/welcome/WelcomeScreen";
 import React from "react";
 import Card from "../components/posts/Card";
-import {ListingDetails, ListItem} from "../components/listing";
+import {ListItem} from "../components/listing";
 import ViewImage from "../components/viewImage";
-import Messages from "../components/messages";
+import Messages from "../screens/messages";
 import {Icon, Screen} from "../components/utils";
-import Account from "../components/account";
+import Account from "../screens/account";
 import AppTextInput from "../components/text";
+import LoginScreen from "../screens/login";
+import ListingDetails from "../screens/listing";
 
 export default function App() {
     const [isNew, setIsNew] = React.useState(false);
     return (
-        <Screen>
-            <Switch value={isNew} onValueChange={(newValue) => setIsNew(newValue)}></Switch>
-        </Screen>
+        <LoginScreen/>
+        // <Screen>
+        //     <Switch value={isNew} onValueChange={(newValue) => setIsNew(newValue)}></Switch>
+        // </Screen>
         // <Screen>
         //     <AppTextInput placeholder={"Username"} icon={"email"}></AppTextInput>
         // </Screen>
         //<Account/>
         //<Messages/>
         //<ViewImage/>
-        // <ListingDetails/>
-        //  <MainScreen/>
+        //<ListingDetails/>
+        //<WelcomeScreen/>
     );
 }
 

@@ -2,14 +2,14 @@ import React from 'react';
 import {StyleSheet, View, Image, SafeAreaView} from "react-native";
 
 import colors from "../../config/colors";
-import AppText from "../appText";
-import {ListItem} from "./index";
+import AppText from "../../components/appText";
+import {ListItem} from "../../components/listing";
 
 
 function ListingDetails() {
     return (
         <SafeAreaView>
-            <Image style={styles.image} source={require('../../../assets/hanpdan_for_sale_1.webp')} />
+            <Image style={styles.image} source={require('../../../assets/hanpdan_for_sale_1.webp')}/>
             <View style={styles.detailsContainer}>
                 <AppText style={styles.title}>Handpan for sale</AppText>
                 <AppText style={styles.price}>800$</AppText>

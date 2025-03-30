@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {FlatList, SafeAreaView, StyleSheet, View} from "react-native";
 
-import {ListItem, ListItemSeparator, ListItemDeleteAction} from "../listing";
-import Screen from "../utils/Screen";
+import {ListItem, ListItemSeparator, ListItemDeleteAction} from "../../components/listing";
+import Screen from "../../components/utils/Screen";
 
 interface MessagesProps {
 

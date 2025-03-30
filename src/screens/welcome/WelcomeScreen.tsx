@@ -1,8 +1,8 @@
-import { Image, ImageBackground, StyleSheet, View, Text } from "react-native";
+import {Image, ImageBackground, StyleSheet, View, Text} from "react-native";
 
-import AppButton from "../buttons";
+import AppButton from "../../components/buttons";
 
-function MainScreen() {
+function WelcomeScreen() {
     return (
         <ImageBackground
             source={require('../../../assets/test_2.jpg')}
@@ -12,9 +12,9 @@ function MainScreen() {
                 <Image style={styles.logo} source={require('../../../assets/Wix-Logo-PNG2.png')}></Image>
                 <Text style={styles.title}>This is my BLOG</Text>
             </View>
-            <View style={{ marginBottom: 100, width: "100%", alignItems: "center" }}>
-                <AppButton title="Login"/>
-                <AppButton title="Register" color="secondary" />
+            <View style={{marginBottom: 100, width: "100%", alignItems: "center"}}>
+                <AppButton title="LoginScreen"/>
+                <AppButton title="Register" color="secondary"/>
             </View>
         </ImageBackground>
     );
@@ -54,4 +54,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default MainScreen;
+export default WelcomeScreen;

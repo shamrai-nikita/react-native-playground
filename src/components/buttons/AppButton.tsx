@@ -6,11 +6,12 @@ import colors from "../../config/colors";
 interface LoginButtonProps {
     title: string;
     color?: keyof typeof colors;
+    onPress?: () => void;
 }
 
-function AppButton({title, color = "primary"}: LoginButtonProps) {
+function AppButton({title, color = "primary", onPress}: LoginButtonProps) {
     return (
-        <TouchableOpacity style={[styles.button, { backgroundColor: colors[color]}]} onPress={() => {alert("Login")}}>
+        <TouchableOpacity style={[styles.button, {backgroundColor: colors[color]}]} onPress={onPress}>
             <Text style={styles.text}>{title}</Text>
         </TouchableOpacity>
     );
@@ -18,8 +19,8 @@ function AppButton({title, color = "primary"}: LoginButtonProps) {
 
 const styles = StyleSheet.create({
     button: {
-        height: 40,
-        width: '70%',
+        height: 50,
+        width: '100%',
         backgroundColor: colors.primary,
         alignSelf: "center",
         borderRadius: 30,
