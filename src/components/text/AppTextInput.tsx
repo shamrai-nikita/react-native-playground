@@ -5,11 +5,11 @@ import {MaterialCommunityIcons} from "@expo/vector-icons";
 import colors from "../../config/colors";
 
 
-interface TextInputProps extends RNTextInputProps {
+export interface AppTextInputProps extends RNTextInputProps {
     icon?: React.ComponentProps<typeof MaterialCommunityIcons>['name'];
 }
 
-function AppTextInput({icon, ...otherProps}: TextInputProps) {
+function AppTextInput({icon, ...otherProps}: AppTextInputProps) {
     return (
         <View style={styles.container}>
             <MaterialCommunityIcons name={icon} size={20} color={colors.medium} style={styles.icon}/>

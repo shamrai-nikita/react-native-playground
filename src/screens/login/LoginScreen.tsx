@@ -31,6 +31,14 @@ function LoginScreen({}: LoginScreenProps) {
             >
                 {({handleChange, handleSubmit, errors, setFieldTouched, touched}) => (
                     <>
+                        {/*        <AppFormField icon={'email'}
+                                      name={'email'}
+                                      placeholder={"Email"}
+                                      autoCapitalize={"none"}
+                                      autoCorrect={false}
+                                      keyboardType={"email-address"}
+                                      textContentType={"emailAddress"}
+                        />*/} //TODO: Failed to make it work.
                         <AppTextInput icon={'email'}
                                       placeholder={"Email"}
                                       autoCapitalize={"none"}
@@ -40,7 +48,7 @@ function LoginScreen({}: LoginScreenProps) {
                                       onChangeText={handleChange("email")}
                                       onBlur={() => setFieldTouched("email")}
                         />
-                        <ErrorMessage error={errors.email} visible={touched.email}></ErrorMessage>
+                        <ErrorMessage error={errors.email} visible={touched.email}></ErrorMessage>*/
                         <AppTextInput icon={'lock'}
                                       placeholder={"Password"}
                                       autoCapitalize={"none"}

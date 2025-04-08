@@ -1,8 +1,10 @@
 import {Image, ImageBackground, StyleSheet, View, Text} from "react-native";
 
 import AppButton from "../../components/buttons";
+import {NavigationProp} from '@react-navigation/native';
 
-function WelcomeScreen() {
+
+function WelcomeScreen({navigation}: { navigation: NavigationProp<any> }) {
     return (
         <ImageBackground
             source={require('../../../assets/test_2.jpg')}
@@ -13,7 +15,7 @@ function WelcomeScreen() {
                 <Text style={styles.title}>This is my BLOG</Text>
             </View>
             <View style={{marginBottom: 100, width: "100%", alignItems: "center"}}>
-                <AppButton title="LoginScreen"/>
+                <AppButton title="Login" onPress={() => navigation.navigate('Login')}/>
                 <AppButton title="Register" color="secondary"/>
             </View>
         </ImageBackground>
